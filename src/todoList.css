@@ -55,6 +55,7 @@
 
 }
 
+
 #taskBtn:hover {
     background-color: #574dcf;
 }
@@ -93,6 +94,13 @@ button {
     font-size: 0.9em;
 }
 
+
 button:hover {
     background-color: #e04444;
+}
+
+#taskCheckbox {
+        transform: scale(1.2); /* Increases the size by 1.5 times */
+        -webkit-transform: scale(1.2); /* For Safari support */
+        margin-right: 8px; /* Optional: space between checkbox and label */
 }

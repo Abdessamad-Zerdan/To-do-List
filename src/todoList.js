@@ -12,6 +12,28 @@ const addTask = (task) => {
 
     })
 
+    const taskCheckbox = document.createElement('input');
+    taskCheckbox.type = 'checkbox';
+    taskCheckbox.id= 'taskCheckbox';
+
+    taskCheckbox.addEventListener('change', () => {
+        if (taskCheckbox.checked) {
+            newTask.style.textDecoration = 'line-through';
+        } else {
+            newTask.style.textDecoration = 'none';
+        }
+
+    })
+
+
+
+
+
+
+
+
+
+    newTask.appendChild(taskCheckbox);
 
     newTask.appendChild(deleteBtn);
 
